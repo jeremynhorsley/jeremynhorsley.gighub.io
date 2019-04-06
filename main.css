@@ -1,0 +1,23 @@
+body {
+    background-color: #282828;
+}
+
+html {
+    font-family:'VT323', monospace;
+    color:#33ff00
+}
+
+a{
+    color:#33ff00;
+    text-decoration:none;
+}
+
+.square {
+    width: 100px;
+    height: 40px;
+    background-color:aqua;
+}
+
+.container {
+    text-align:left;
+}
