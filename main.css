@@ -22,16 +22,6 @@ html {
     text-decoration:none;
 }*/
 
-.square {
-    width: auto;
-    height: auto;
-    background-color:#2828ff;
-}
-
-.container {
-    text-align:left;
-}
-
 img {
     max-width: 100%;
     height: auto;
@@ -51,15 +41,13 @@ img {
 
 .row {
     display: flex;
-    width: 100%;
-    
+    width: 100%;   
 }
 
 .row::after {
     display: block;
     clear: both;
-    content: "";
-    
+    content: "";  
 }
 
 .col-1 {width: 8.33%;}
@@ -170,6 +158,5 @@ ul.topnav li.dropdownIcon {
         display: block;
         text-align: left;
     }
-
 }
 
