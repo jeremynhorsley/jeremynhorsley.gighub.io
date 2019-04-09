@@ -1,21 +1,31 @@
 body {
     background-color: #282828;
+    line-height: 1;
+    margin: 0;
 }
+
+.title {
+    background-color: #2828ff;
+    color: #33ff00;
+    text-align: center;
+    padding: 1px;
+}
+
 
 html {
     font-family:'VT323', monospace;
     color:#33ff00
 }
 
-a{
+/*a{
     color:#33ff00;
     text-decoration:none;
-}
+}*/
 
 .square {
-    width: 100px;
-    height: 40px;
-    background-color:aqua;
+    width: auto;
+    height: auto;
+    background-color:#2828ff;
 }
 
 .container {
@@ -35,7 +45,7 @@ img {
     border-radius: 10px;
     width: 40px;
     height: 40px;
-    border: 2px solid #33ff00;
+    border: 1px solid #33ff00;
     padding: 5px;
 }
 
@@ -70,7 +80,96 @@ img {
 }
 
 [class*="col-"]{
-    border: 2px solid #33ff00;
+/*    border: 2px solid #33ff00;*/
     padding: 15px;
     float: left;
 }
+
+/*h1,h3 {
+    text-align: center;
+}*/
+
+nav,
+header,
+footer {
+    display: block;
+}
+
+nav {
+    width: 100%;
+    margin: 0;
+}
+
+nav ul {
+    background-color: #282828;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+ ul.topnav li {
+    list-style: none;
+    float: left;
+}
+
+ul.topnav li.topnav-right {
+    float: right;
+}
+
+ul.topnav li a {
+    display: block;
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+    padding: 14px;
+    text-transform: uppercase;
+    color: #33ff00;     
+}
+
+ul.topnav li a:hover {
+    background-color: #2828ff;
+    color: #fff;
+}
+
+ul.topnav li.dropdownIcon {
+    display: none;
+}
+
+#dropdownClick {
+    
+}
+
+/*############################ Mobile #####################*/
+
+@media screen and (max-width: 680px) {
+    ul.topnav li:not(:nth-child(1)) {
+        display: none;
+    }
+    
+    ul.topnav li.dropdownIcon {
+        display: block;
+        float: right;
+    }
+    
+    ul.topnav.responsive li.dropdownIcon {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    
+    ul.topnav.responsive {
+        position: relative;
+    }
+    
+    ul.topnav.responsive li {
+        display: inline;
+        float: none;
+    }
+    
+    ul.topnav.responsive li a {
+        display: block;
+        text-align: left;
+    }
+
+}
+

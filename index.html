@@ -12,27 +12,27 @@
     <link rel="stylesheet" href="main.css">
 </head>
     
-<body>    
+<body> 
+    <nav>
+     <ul class="topnav" id="dropdownClick">
+         <li><a href="#home>">Home</a></li>
+         <li><a href="#dsp.html>">Signal Processing</a></li>
+         <li><a href="#electromagnetics>">Electromagnetics</a></li>
+         <li><a href="#operational-amplifiers>">Op-Amps</a></li>
+         <li><a href="#microprocessors>">Microprocessors</a></li>
+         <li><a href="#computervision>">Computer Vision</a></li>
+         <li><a href="#datastructures>">data-structures</a></li>
+         <li><a href="#power>">Power</a></li>
+         <li class="topnav-right"><a href="#Login">Login</a></li>
+         <li class="topnav-right"><a href="#Signup">Signup</a></li>
+         <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+    </ul>
+    </nav>
+    
+    
     
     <h1>Jeremyn Horsley</h1>
-    
-        <h3>Notes</h3>
-        <ul>
-            <li><a href="dsp.html">Digital Signal Processing</a></li>
-            <li>Linear Systems Analysis</li>
-            <li>Electromagnetics</li>
-            <li>Operational Amplifiers</li>
-            <li>Communication Systems</li>
-            <li>Control Systems</li>
-            <li>Microelectronics</li>
-            <li>Digital Design</li>
-            <li>Power Systems</li>
-            <li>Cost Analysis</li>
-            <li>Microprocessors</li>
-            <li>Computer Vision</li>
-            <li>Data Structures and Algorithms</li>
-        </ul> 
-    
+
         <h3>Current Projects</h3>
         <ul>
             <li>Learning WebDev from scratch</li>
@@ -68,7 +68,21 @@
         </div>
     </div>
     
+  <script>
+      function dropdownMenu() {
+          var x = document.getElementById("dropdownClick");
+          if (x.className === "topnav") {
+              x.className += " responsive";
+              /*change topnav to topnav.responsive*/
+          } else {
+              x.className = "topnav";
+          }
+          
+      }
+      
     
+    
+    </script>  
 </body>
 </html>
 
