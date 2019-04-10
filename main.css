@@ -1,21 +1,36 @@
+nav,
+header,
+footer {
+    background-color: #555;
+    display: block;
+    
+}
+
 body {
-    background-color: #282828;
+    background-color: #0074d9;
     line-height: 1;
     margin: 0;
 }
 
-.title {
-    background-color: #2828ff;
-    color: #33ff00;
+.container {
+    width: 100%;
+    margin: auto;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+/*.title {
+    background-color: #001f3f;
+    color: #fff;
     text-align: center;
     padding: 1px;
-}
-
+}*/
 
 html {
-    font-family:'VT323', monospace;
-    color:#33ff00
+    font-family:'Oswald', monospace;
+    color:#fff
 }
+
 
 /*a{
     color:#33ff00;
@@ -41,11 +56,13 @@ img {
 
 .row {
     display: flex;
-    width: 100%;   
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .row::after {
-    display: block;
+    display: table;
     clear: both;
     content: "";  
 }
@@ -67,21 +84,14 @@ img {
     box-sizing: border-box;
 }
 
+/*
 [class*="col-"]{
-/*    border: 2px solid #33ff00;*/
+    border: 2px solid #33ff00;
     padding: 15px;
     float: left;
 }
+*/
 
-/*h1,h3 {
-    text-align: center;
-}*/
-
-nav,
-header,
-footer {
-    display: block;
-}
 
 nav {
     width: 100%;
@@ -89,7 +99,7 @@ nav {
 }
 
 nav ul {
-    background-color: #282828;
+    background-color: #;
     overflow: hidden;
     margin: 0;
     padding: 0;
@@ -111,12 +121,12 @@ ul.topnav li a {
     text-align: center;
     padding: 14px;
     text-transform: uppercase;
-    color: #33ff00;     
+    color: #fff;     
 }
 
 ul.topnav li a:hover {
-    background-color: #2828ff;
-    color: #fff;
+    background-color: #001f3f;
+    color: #ffdc00;
 }
 
 ul.topnav li.dropdownIcon {
@@ -127,6 +137,39 @@ ul.topnav li.dropdownIcon {
     
 }
 
+/*########################### Custom Styles ################*/
+
+#sectin-1-gradient {
+    background: #076dff;
+    background: linear-gradient(#076dff, #65a5ff);
+}
+
+div.leftSide-col {
+    margin-left: 30%;   
+}
+
+div.rightSide-col {
+    margin-left: 10%;
+}
+
+h1.large {
+    color: #fff;
+    font-size: 56px;
+    margin: 0;
+    line-height: 70px;
+}
+
+form h2 {
+    color: #fff;
+}
+
+input[type="text"]{
+    font-size: 20px;
+    width: 400px;
+    min-width: 100px;
+    padding: 5px;
+    border-radius: 7px;
+}
 /*############################ Mobile #####################*/
 
 @media screen and (max-width: 680px) {
@@ -157,6 +200,27 @@ ul.topnav li.dropdownIcon {
     ul.topnav.responsive li a {
         display: block;
         text-align: left;
+    }
+    
+    .col-6 {
+        width: 100%;
+        margin: 0;
+    }
+    
+    div.leftSide-col,
+    div.rightSide-col {
+        margin: 15px;
+    }
+    
+    input[type="text"]{
+        width: 350px;
+    }
+    
+    .tuneContainer iframe {
+        position: relative;
+        width: 100%;
+        margin: 0;
+        overflow: hidden;
     }
 }
 
