@@ -232,6 +232,29 @@ input[type="text"]{
     padding: 5px;
     border-radius: 7px;
 }
+
+footer.footsy {
+    background-color: #666;
+    padding-left: 10%;
+}
+
+footer.footsy h1 {
+    display: block;
+    color: #fff;
+    font-size: 35px;   
+}
+
+footer.footsy ul {
+    list-style: none;
+    text-align: left;
+    padding-left: 0;
+}
+
+footer.footsy ul li {
+    color: #fff;
+    font-size: 22;
+    line-height: 1.5;
+}
 /*############################ Mobile #####################*/
 
 @media screen and (max-width: 680px) {
@@ -274,6 +297,11 @@ input[type="text"]{
     .col-5 {
         width: 100%;
         margin: 0;
+    }
+    
+    div.mobileStack {
+        width: 50%;
+        display: block;
     }
     
     div.box {
