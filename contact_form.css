@@ -68,3 +68,7 @@ div.contactBox {
     width: 360px;
     margin: auto;
 }
+
+div.socialWrapper {
+    text-align: center;
+}
