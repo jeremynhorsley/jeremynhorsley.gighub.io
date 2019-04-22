@@ -19,13 +19,14 @@ label {
 
 p {
     font-size 28px;
-    color: #000;
+    color: #fff;
     line-height 1px;
 }
 
 article p {
     font-size: 35px;
     padding: 20px;
+    line-height: 1.2;
     
 }
 
@@ -34,6 +35,22 @@ article p {
     margin: auto;
     padding-top: 4%;
     padding-bottom: 4%;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: inherit;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
 }
 
 /*.title {
@@ -46,6 +63,18 @@ article p {
 html {
     font-family:'Oswald', monospace;
     color:#fff
+}
+
+.boxText {
+    color: black;
+    display: block;
+    text-align: left;
+}
+
+.boxList {
+    color: black;
+    list-style: none;
+    text-align: left;
 }
 
 
@@ -116,7 +145,7 @@ nav {
 }
 
 nav ul {
-    background-color: #;
+    background-color: #888;
     overflow: hidden;
     margin: 0;
     padding: 0;
@@ -156,7 +185,7 @@ ul.topnav li.dropdownIcon {
 
 /*########################### Custom Styles ################*/
 
-#sectin-1-gradient {
+#section-1-gradient {
     background: #076dff;
     background: linear-gradient(#076dff, #65a5ff);
 }
@@ -211,7 +240,7 @@ div.rightSide-col {
 
 h1.large {
     color: #fff;
-    font-size: 56px;
+    font-size: 40px;
     margin: 0;
     line-height: 70px;
 }
@@ -221,17 +250,21 @@ h1.section2Header {
     text-align: center;
 }
 
+ul.boxList {
+    padding-inline-start: 0px;
+}
+
 form h2 {
     color: #fff;
 }
 
-input[type="text"]{
+/*input[type="text"]{
     font-size: 20px;
     width: 400px;
     min-width: 100px;
     padding: 5px;
     border-radius: 7px;
-}
+}*/
 
 footer.footsy {
     background-color: #666;
@@ -314,9 +347,9 @@ footer.footsy ul li {
         margin: 15px;
     }
     
-    input[type="text"]{
+/*    input[type="text"]{
         width: 350px;
-    }
+    }*/
     
     .tuneContainer iframe {
         position: relative;
