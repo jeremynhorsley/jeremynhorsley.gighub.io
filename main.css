@@ -323,7 +323,7 @@ footer.footsy ul li {
 }
 
 a:-webkit-any-link {
-    color: -webkit-link;
+    color: #00ff66;
     text-decoration: none;
     cursor: pointer;
 }
