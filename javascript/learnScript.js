@@ -11,8 +11,7 @@ function dropdownMenu() {
 function area(t,w,h,r) {
     if(t == "T") {
         return w*h*0.5;
-    }
-    
+    }  
 }
 
 var skills = [];
@@ -26,9 +25,9 @@ function skill(name, years, perc) {
 }
 
 
-skills.push(new skill("HTML", 2, 45));
-skills.push(new skill("CSS", 5, 55));
-skills.push(new skill("Javascript", 2, 10));
+skills.push(new skill("HTML", 10, 100));
+skills.push(new skill("CSS", 10, 100));
+skills.push(new skill("Javascript", 8, 95));
             
 
 for ( var i = 0; i < skills.length; i++) {

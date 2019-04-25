@@ -1,25 +1,25 @@
 nav,
 header,
 footer {
-    display: block;
-    
+    display: block; 
 }
 
 body {
-    background-color: #0074d9;
+    background-color: #282828;
     line-height: 1;
     margin: 0;
+    text-decoration: none;
 }
 
 label {
     font-size: 35px;
     font-weight: 600;
-    color: #000;
+    color: #00ff66;
 }
 
 p {
     font-size 28px;
-    color: #fff;
+    color: #00ff66;
     line-height 1px;
 }
 
@@ -38,13 +38,13 @@ article p {
 }
 
 table {
-  font-family: arial, sans-serif;
+  font-family: 'Share Tech Mono', monospace;
   border-collapse: collapse;
   width: inherit;
 }
 
 td, th {
-  border: 1px solid #dddddd;
+  border: 1px solid #00ff66;
   text-align: left;
   padding: 8px;
 }
@@ -61,8 +61,8 @@ tr:nth-child(even) {
 }*/
 
 html {
-    font-family:'Oswald', monospace;
-    color:#fff
+    font-family: 'Share Tech Mono', monospace;
+    color:#ffb000;
 }
 
 .boxText {
@@ -93,10 +93,10 @@ img {
 }
 
 .borderImg {
-    border-radius: 10px;
+    border-radius: 1px;
     width: 40px;
     height: 40px;
-    border: 1px solid #33ff00;
+    border: 1px solid #00ff66;
     padding: 5px;
 }
 
@@ -171,7 +171,7 @@ ul.topnav li a {
 }
 
 ul.topnav li a:hover {
-    background-color: #001f3f;
+    background-color: #000;
     color: #ffdc00;
 }
 
@@ -186,8 +186,8 @@ ul.topnav li.dropdownIcon {
 /*########################### Custom Styles ################*/
 
 #section-1-gradient {
-    background: #076dff;
-    background: linear-gradient(#076dff, #65a5ff);
+    background: #232323;
+    background: linear-gradient(#232323, #232323);
 }
 
 div.box {
@@ -195,7 +195,7 @@ div.box {
     margin: 24px;
     padding: 36px 24px 40px 24px;
     border-radius: 7px;
-    background-color: #fff;
+    background-color: #232323;
     box-shadow: 0 0 0 1px rgba(0,0,0,.15),
         0 2px 3px 0 rgba(0,0,0,.1);
     /*horiz vert blur spread rgb(shaddow, background, box, opacity)*/
@@ -209,7 +209,7 @@ div.bitRateIcon img {
     /*horiz vert blur spread rgb(shaddow, background, box, opacity)*/
 }
 
-button {
+/*button {
     font-size: 32px;
     font-weight: 700;
     color: #fff;
@@ -219,7 +219,7 @@ button {
     text-align: center;
     margin: 5px;
     border-radius: 7px;
-}
+}*/
 
 button.learnMore {
     display: block;
@@ -239,15 +239,48 @@ div.rightSide-col {
 }
 
 h1.large {
-    color: #fff;
+    text-decoration: none;
+    color: #ffbb00;
     font-size: 40px;
     margin: 0;
     line-height: 70px;
+    
 }
 
+h3.amber {
+    color: #ffbb00;
+}
+
+h3.lt-amber {
+    color: #ffcc00
+}
+
+h3.green1 {
+    color: #33ff00;
+}
+
+h3.appleii {
+    color: #33ff33;
+}
+
+h3.green2 {
+    color: #00ff33;
+}
+
+h3.appleiic {
+    color: #66ff66;
+}
+
+h3.green3 {
+    color: #00ff66;
+}
 h1.section2Header {
-    font-size: 65px;
+    font-size: 15px;
     text-align: center;
+}
+
+h5.background-color {
+    color: #fff;
 }
 
 ul.boxList {
@@ -267,14 +300,14 @@ form h2 {
 }*/
 
 footer.footsy {
-    background-color: #666;
+    background-color: #888888;
     padding-left: 10%;
 }
 
 footer.footsy h1 {
     display: block;
     color: #fff;
-    font-size: 35px;   
+    font-size: 21px;   
 }
 
 footer.footsy ul {
@@ -285,8 +318,14 @@ footer.footsy ul {
 
 footer.footsy ul li {
     color: #fff;
-    font-size: 22;
+    font-size: 15px;
     line-height: 1.5;
+}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    text-decoration: none;
+    cursor: pointer;
 }
 /*############################ Mobile #####################*/
 
