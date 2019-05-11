@@ -1,7 +1,7 @@
 nav,
 header,
-footer {
-    display: block; 
+footer{
+    display: block;
 }
 
 body {
@@ -17,17 +17,10 @@ label {
     color: #00ff66;
 }
 
-/*p {
-    font-size 21px;
-    color: #00ff66;
-    line-height 1px;
-}*/
-
 article p {
     font-size: 35px;
     padding: 20px;
-    line-height: 1.2;
-    
+    line-height: 1.2;   
 }
 
 .container {
@@ -37,29 +30,6 @@ article p {
     padding-bottom: 4%;
     line-height: 1.2
 }
-
-table {
-  font-family: 'Share Tech Mono', monospace;
-  border-collapse: collapse;
-  width: inherit;
-}
-
-td, th {
-  border: 1px solid #00ff66;
-  text-align: left;
-  padding: 8px;
-}
-
-tr:nth-child(even) {
-  background-color: #dddddd;
-}
-
-/*.title {
-    background-color: #001f3f;
-    color: #fff;
-    text-align: center;
-    padding: 1px;
-}*/
 
 html {
     font-family: 'Share Tech Mono', monospace;
@@ -78,11 +48,6 @@ html {
     text-align: left;
 }
 
-
-/*a{
-    color:#33ff00;
-    text-decoration:none;
-}*/
 
 img {
     max-width: 100%;
@@ -131,15 +96,6 @@ img {
     box-sizing: border-box;
 }
 
-/*
-[class*="col-"]{
-    border: 2px solid #33ff00;
-    padding: 15px;
-    float: left;
-}
-*/
-
-
 nav {
     width: 100%;
     margin: 0;
@@ -186,20 +142,15 @@ ul.topnav li.dropdownIcon {
 
 /*########################### Custom Styles ################*/
 
-#section-1-gradient {
-    background: #232323;
-    background: linear-gradient(#232323, #232323);
-}
+
 
 div.box {
     text-align: center;
     margin: 24px;
     padding: 36px 24px 40px 24px;
-    border-radius: 7px;
-    background-color: #232323;
-    box-shadow: 0 0 0 1px rgba(0,0,0,.15),
-        0 2px 3px 0 rgba(0,0,0,.1);
-    /*horiz vert blur spread rgb(shaddow, background, box, opacity)*/
+    border-radius: 0px;
+    background-color: #33FF33 ;
+
 }
 
 div.bitRateIcon img {
@@ -221,6 +172,14 @@ div.bitRateIcon img {
     margin: 5px;
     border-radius: 7px;
 }*/
+
+
+div.details{
+    padding-left: 100px;
+    align-content: left;
+    text-align: left;
+}
+
 
 button.learnMore {
     display: block;
@@ -283,6 +242,7 @@ h3.appleiic {
 h3.green3 {
     color: #00ff66;
 }
+
 h1.section2Header {
     font-size: 15px;
     text-align: center;
@@ -327,7 +287,7 @@ footer.footsy ul {
 
 footer.footsy ul li {
     color: #fff;
-    font-size: 15px;
+    
     line-height: 1.5;
 }
 
@@ -391,7 +351,8 @@ a:-webkit-any-link {
     }
     
     div.leftSide-col,
-    div.rightSide-col {
+    div.rightSide-col,
+    main {
         margin: 15px;
     }
     
