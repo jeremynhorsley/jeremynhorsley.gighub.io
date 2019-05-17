@@ -1,4 +1,4 @@
-TESTER = document.getElementById('tester');
+var TESTER = document.getElementById('tester');
 
 Plotly.plot( TESTER, [{
     x: [1, 2, 3, 4, 5],

@@ -22,7 +22,7 @@ function loadAbout() {
   xhttp.send();
 };
 
-function loadProjects() {
+function loadProjects() { 
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
@@ -30,7 +30,7 @@ function loadProjects() {
     }
   };
   xhttp.open("GET", "HTML/projects.html", true);
-  xhttp.send();
+  xhttp.send();  
 };
 
 function loadContact() {

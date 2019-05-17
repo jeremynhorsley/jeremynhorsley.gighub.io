@@ -142,14 +142,17 @@ ul.topnav li.dropdownIcon {
 
 /*########################### Custom Styles ################*/
 
-
+div.home {
+    text-align: center;
+}
 
 div.box {
     text-align: center;
+    color: #282828;
     margin: 24px;
     padding: 36px 24px 40px 24px;
     border-radius: 0px;
-    background-color: #33FF33 ;
+    background-color: #00ff66 ;
 
 }
 
