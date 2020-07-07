@@ -1,5 +1,3 @@
-
-
 function loadHome() {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {

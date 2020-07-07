@@ -1,3 +1,11 @@
+:root {
+    --background-color: #3aafa9;
+    --border-color: #2b7a78;
+    --label-color: #DEF2F1;
+    --html-color: #feffff;
+    --nav-color: #17252A;
+}
+
 nav,
 header,
 footer{
@@ -5,7 +13,7 @@ footer{
 }
 
 body {
-    background-color: #282828;
+    background-color: var(--background-color);
     line-height: 1;
     margin: 0;
     text-decoration: none;
@@ -14,7 +22,7 @@ body {
 label {
     font-size: 35px;
     font-weight: 600;
-    color: #00ff66;
+    color: var(--label-color);
 }
 
 article p {
@@ -33,7 +41,7 @@ article p {
 
 html {
     font-family: 'Share Tech Mono', monospace;
-    color:#ffb000;
+    color:var(--html-color);
 }
 
 .boxText {
@@ -62,7 +70,7 @@ img {
     border-radius: 1px;
     width: 40px;
     height: 40px;
-    border: 1px solid #00ff66;
+    border: 1px solid var(--border-color);
     padding: 5px;
 }
 
@@ -102,7 +110,7 @@ nav {
 }
 
 nav ul {
-    background-color: #888;
+    background-color: var(--border-color);
     overflow: hidden;
     margin: 0;
     padding: 0;
@@ -124,12 +132,12 @@ ul.topnav li a {
     text-align: center;
     padding: 14px;
     text-transform: uppercase;
-    color: #fff;     
+    color: var(--html-color);     
 }
 
 ul.topnav li a:hover {
-    background-color: #000;
-    color: #ffdc00;
+    background-color: var(--background-color);
+    color: var(--html-color);
 }
 
 ul.topnav li.dropdownIcon {
@@ -148,11 +156,11 @@ div.home {
 
 div.box {
     text-align: center;
-    color: #282828;
+    color: var(--label-color);
     margin: 24px;
     padding: 36px 24px 40px 24px;
     border-radius: 0px;
-    background-color: #00ff66 ;
+    background-color: var(--border-color) ;
 
 }
 
@@ -203,7 +211,7 @@ div.rightSide-col {
 
 h1.large {
     text-decoration: none;
-    color: #ffbb00;
+    color: var(--html-color);
     font-size: 40px;
     margin: 0;
     line-height: 70px;
@@ -252,7 +260,7 @@ h1.section2Header {
 }
 
 h5.background-color {
-    color: #fff;
+    color: var(--html-color);
 }
 
 ul.boxList {
@@ -260,7 +268,7 @@ ul.boxList {
 }
 
 form h2 {
-    color: #fff;
+    color: var(--html-color);
 }
 
 /*input[type="text"]{
@@ -272,13 +280,13 @@ form h2 {
 }*/
 
 footer.footsy {
-    background-color: #888888;
+    background-color: var(--border-color);
     padding-left: 10%;
 }
 
 footer.footsy h1 {
     display: block;
-    color: #fff;
+    color: var(--html-color);
     font-size: 21px;   
 }
 
@@ -289,13 +297,13 @@ footer.footsy ul {
 }
 
 footer.footsy ul li {
-    color: #fff;
+    color: var(--html-color);
     
     line-height: 1.5;
 }
 
 a:-webkit-any-link {
-    color: #00ff66;
+    color: var(--nav-color);
     text-decoration: none;
     cursor: pointer;
 }
